@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Calcul de l'IMC</title>
+  <link rel="stylesheet" href="/CSS/style.css" />
+</head>
+
+<body>
+    <nav>
+        <ul class="nav-links">
+          <li><a href="/">Accueil</a></li>
+          <li><a href="/historique">Historique</a></li>
+        </ul>
+      </nav>
+      
+  <h1>Calcul de l'IMC</h1>
+
+  <form action="/calculate" method="POST">
+    <label for="date">Date :</label>
+    <input type="text" id="date" name="date" required><br>
+    <label for="height">Taille en cm :</label>
+    <input type="text" id="height" name="height" required><br>
+    <label for="weight">Poids en kg :</label>
+    <input type="text" id="weight" name="weight" required><br>
+    <button type="submit">Envoyer</button>
+  </form>
+</body>
+</html>
+
+

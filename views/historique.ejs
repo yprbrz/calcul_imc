@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Historique des IMC</title>
+  <link rel="stylesheet" href="/CSS/style.css" />
+</head>
+
+<body>
+    <nav>
+        <ul class="nav-links"> 
+          <li><a href="/">Accueil</a></li>
+          <li><a href="/historique">Historique</a></li>
+        </ul>
+      </nav>
+      
+  <h1>Historique des IMC</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>IMC</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% imcData.forEach(item => { %>
+        <tr>
+          <td><%= item.date %></td>
+          <td><%= item.imc.toFixed(2) %></td>
+        </tr>
+      <% }); %>
+    </tbody>
+  </table>
+</body>
+</html>
